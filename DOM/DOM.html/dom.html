@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dom2.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>1-DOM Manipulation</h2>
+    <button onclick="Click()">Click Me</button>
+    <h3 id="heading3">This is heading 3</h3>
+    <br>
+    <h2>2- Textbox Input</h2>
+        <input type="text" id="text1" placeholder="This is random text" required>
+        <br>
+        <input type="password" id="text2" placeholder="password" required>
+        <button id="btntext" onclick="ShowText()">Click Me</button>
+    <br>
+
+    <h2>3- Drop down Select box</h2>
+    <select name="choice" id="s1">
+        <option value="v1">CIS 121 Intro to CIS</option>
+        <option value="v2">CIS 121 Intro to Programming</option>
+        <option value="v3">CIS 121 Intro to DOP</option>
+        <option value="v4">CIS 121 Intro to Javastript</option>
+    </select>
+    <button onclick="Select()">Click</button>
+    <p id="demos"></p>
+    <br>
+
+    <h2>4- Forms Validation</h2>
+    <form name="myform" onsubmit="validationForm()" methods="get">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+    </form>
+        <p id="demo1"></p>
+
+        -- 2nd form using browser validations
+        <form name="myform" onsubmit="validationForm1()" methods="get">
+            Name: <input type="text" name="fname1" required> 
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+    <h2>5- HTML code for radio box</h2>
+    <p>Select your favorite colors:</p>
+    <label for="c1"> <input type="radio" name="color" value="red" id="c1" checked>red</label>
+    <label for="c2"> <input type="radio" name="color" value="orange" id="c2">orange</label>
+    <label for="c3"> <input type="radio" name="color" value="purple" id="c3">purple</label>
+    <input type="button" onclick="Check()" value="Check">
+    <br>
+
+    <h2>6- HTML code for check box</h2>
+    <label for="r1"> <input type="checkbox" name="color" value="red" id="r1" checked>red</label>
+    <label for="r2"> <input type="checkbox" name="color" value="orange" id="r2">orange</label>
+    <input type="button" onclick="Toggle()" value="Toggle">
+</body>
+</html>
